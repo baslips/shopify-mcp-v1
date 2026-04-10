@@ -130,10 +130,9 @@ class TokenManager:
             resp = await client.post(
                 url,
                 data={
-                    "grant_type":    "client_credentials",
-                    "client_id":     self._client_id,
-                    "client_secret": self._client_secret,
-                },
+    "client_id": self._client_id,
+    "client_secret": self._client_secret,
+},
                 headers={"Content-Type": "application/x-www-form-urlencoded"},
                 timeout=15.0,
             )
